@@ -36,7 +36,7 @@ export default function About() {
               <span className="text-zinc-500 text-sm font-medium uppercase tracking-widest">Stack</span>
               <ul className="text-zinc-300 space-y-1 font-medium">
                 <li>Next.js / React / Phaser</li>
-                <li>TypeScript</li>
+                <li>TypeScript </li>
                 <li>Framer Motion</li>
                 <li>Firebase</li>
               </ul>
