@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useState } from "react";
+import { useEffect } from "react";
 import { motion, useSpring, useTransform, useMotionValue } from "framer-motion";
 
 const SCROLL_HEIGHT_VH = 500;

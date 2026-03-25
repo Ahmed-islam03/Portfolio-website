@@ -17,7 +17,7 @@ export default function About() {
         {/* Content Area */}
         <div className="md:w-2/3 flex flex-col gap-8 md:gap-12 mt-2 md:mt-12">
           <p className="text-xl md:text-3xl font-light text-zinc-300 leading-relaxed text-balance">
-            I'm a creative web / game developer bridging the gap between aesthetics and uncompromising engineering. My work focuses on building high-performance, immersive web experiences that leave a lasting impression.
+            I&apos;m a creative web / game developer bridging the gap between aesthetics and uncompromising engineering. My work focuses on building high-performance, immersive web experiences that leave a lasting impression.
           </p>
 
           <div className="w-full h-[1px] bg-zinc-800" />
