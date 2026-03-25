@@ -1,6 +1,6 @@
 export default function About() {
   return (
-    <section id="about" className="relative w-full py-24 md:py-40 px-6 md:px-12 bg-[#121212] z-20">
+    <section id="about" className="relative w-full py-24 md:py-40 px-6 md:px-12 bg-transparent z-20">
       <div className="max-w-7xl mx-auto flex flex-col md:flex-row gap-16 md:gap-24 items-start">
 
         {/* Title Area */}

@@ -3,29 +3,27 @@ import { ExternalLink, GitBranch } from "lucide-react";
 export default function Projects() {
   const projects = [
     {
-      title: "Neura Interface",
-      description: "A futuristic neural-controlled dashboard built with webGL and React.",
-      year: "2025",
+      title: "Flappy Bird Game",
+      description: "A remake of the iconic flappy bird game made with Phaser.js and Firebase.",
+      link: "https://flappy-bird-one-ashen.vercel.app/",
+      repo: "https://github.com/Ahmed-islam03/FlappyBird",
     },
     {
       title: "Aura E-Commerce",
       description: "High performance headless storefront with bespoke animations.",
-      year: "2024",
     },
     {
       title: "Vanguard Studio",
       description: "WebGL powered digital agency portfolio with smooth scrolling mechanics.",
-      year: "2024",
     },
     {
       title: "Lumina App",
       description: "Fintech dashboard with real-time data visualization and dark mode.",
-      year: "2023",
     }
   ];
 
   return (
-    <section id="work" className="relative w-full py-24 md:py-40 px-6 md:px-12 bg-[#121212] z-20 border-t border-zinc-800/50">
+    <section id="work" className="relative w-full py-24 md:py-40 px-6 md:px-12 bg-transparent z-20 border-t border-zinc-800/50">
       <div className="max-w-7xl mx-auto">
 
         {/* Header — matches About layout */}
@@ -52,19 +50,28 @@ export default function Projects() {
               key={index}
               className="group relative flex flex-col p-8 rounded-3xl bg-zinc-900/40 backdrop-blur-md border border-zinc-800/50 hover:border-zinc-700/80 transition-all duration-500 overflow-hidden"
             >
-              <div className="absolute inset-0 bg-gradient-to-b from-white/[0.02] to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
+              <div className="pointer-events-none absolute inset-0 bg-gradient-to-b from-white/[0.02] to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
 
-              <div className="flex justify-between items-start mb-12">
-                <span className="px-3 py-1 rounded-full text-xs font-medium text-zinc-400 bg-zinc-800/50 border border-zinc-700/50">
-                  {project.year}
-                </span>
+              <div className="relative z-10 flex justify-end items-start mb-12">
                 <div className="flex space-x-3 text-zinc-500">
-                  <span className="hover:text-white transition-colors cursor-pointer">
-                    <GitBranch size={20} strokeWidth={1.5} />
-                  </span>
-                  <span className="hover:text-white transition-colors cursor-pointer">
-                    <ExternalLink size={20} strokeWidth={1.5} />
-                  </span>
+                  {project.repo ? (
+                    <a href={project.repo} target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors cursor-pointer block">
+                      <GitBranch size={20} strokeWidth={1.5} />
+                    </a>
+                  ) : (
+                    <span className="hover:text-white transition-colors cursor-pointer">
+                      <GitBranch size={20} strokeWidth={1.5} />
+                    </span>
+                  )}
+                  {project.link ? (
+                    <a href={project.link} target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors cursor-pointer block">
+                      <ExternalLink size={20} strokeWidth={1.5} />
+                    </a>
+                  ) : (
+                    <span className="hover:text-white transition-colors cursor-pointer">
+                      <ExternalLink size={20} strokeWidth={1.5} />
+                    </span>
+                  )}
                 </div>
               </div>
 

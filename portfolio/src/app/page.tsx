@@ -4,10 +4,11 @@ import Projects from "@/components/Projects";
 import About from "@/components/About";
 import Navbar from "@/components/Navbar";
 import Contact from "@/components/Contact";
+import NeonGridBackground from "@/components/NeonGridBackground";
 
 export default function Home() {
   return (
-    <main className="min-h-screen bg-[#121212] overflow-x-clip">
+    <main className="min-h-screen bg-transparent overflow-x-clip">
       <Navbar />
       <div className="relative">
         {/* Scrollytelling element holding the 500vh container */}
@@ -16,6 +17,9 @@ export default function Home() {
         {/* Parallax typography perfectly overlaid on the canvas */}
         <Overlay />
       </div>
+
+      {/* Fixed global animated background */}
+      <NeonGridBackground />
 
       {/* Renders after 500vh scroll space */}
       <About />
