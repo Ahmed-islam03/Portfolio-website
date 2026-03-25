@@ -36,7 +36,7 @@ export default function NeonGridBackground() {
         this.length = Math.random() * 100 + 50;
         this.history = [];
 
-        // Pick a random intersection on the grid (restricted to columns 6 to 27)
+        // Pick a random intersection on the grid (restricted to columns 7 to 24)
         const minCol = 7;
         const maxCol = 24;
         const col = Math.floor(Math.random() * (maxCol - minCol + 1)) + minCol;

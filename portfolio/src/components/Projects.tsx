@@ -9,16 +9,16 @@ export default function Projects() {
       repo: "https://github.com/Ahmed-islam03/FlappyBird",
     },
     {
-      title: "Aura E-Commerce",
-      description: "High performance headless storefront with bespoke animations.",
+      title: "Project 2",
+      description: "nill.",
     },
     {
-      title: "Vanguard Studio",
-      description: "WebGL powered digital agency portfolio with smooth scrolling mechanics.",
+      title: "Project 3",
+      description: "nill.",
     },
     {
-      title: "Lumina App",
-      description: "Fintech dashboard with real-time data visualization and dark mode.",
+      title: "Project 4",
+      description: "nill.",
     }
   ];
 
