@@ -23,12 +23,13 @@ export default function Contact() {
         <div className="flex flex-col sm:flex-row gap-6 mt-4">
           <a
             href="mailto:your@email.com"
-            className="group flex items-center gap-5 p-6 rounded-2xl bg-zinc-900/50 border border-zinc-800 hover:border-zinc-600 transition-all duration-300 min-w-[280px]"
+            className="group relative flex items-center gap-5 p-8 rounded-3xl bg-zinc-900/40 backdrop-blur-md border border-zinc-800/50 hover:border-zinc-700/80 transition-all duration-500 overflow-hidden min-w-[280px]"
           >
-            <div className="w-12 h-12 rounded-xl bg-white/5 border border-zinc-700 flex items-center justify-center text-xl flex-shrink-0">
+            <div className="pointer-events-none absolute inset-0 bg-gradient-to-b from-white/[0.02] to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
+            <div className="relative z-10 w-12 h-12 rounded-xl bg-white/5 border border-zinc-700 flex items-center justify-center text-xl flex-shrink-0">
               📩
             </div>
-            <div>
+            <div className="relative z-10">
               <p className="text-zinc-500 text-xs uppercase tracking-widest mb-1">Email</p>
               <p className="text-white font-medium text-base group-hover:text-zinc-300 transition-colors">ahmedislamk03@gmail.com</p>
             </div>
@@ -36,12 +37,13 @@ export default function Contact() {
 
           <a
             href="tel:+1234567890"
-            className="group flex items-center gap-5 p-6 rounded-2xl bg-zinc-900/50 border border-zinc-800 hover:border-zinc-600 transition-all duration-300 min-w-[280px]"
+            className="group relative flex items-center gap-5 p-8 rounded-3xl bg-zinc-900/40 backdrop-blur-md border border-zinc-800/50 hover:border-zinc-700/80 transition-all duration-500 overflow-hidden min-w-[280px]"
           >
-            <div className="w-12 h-12 rounded-xl bg-white/5 border border-zinc-700 flex items-center justify-center text-xl flex-shrink-0">
+            <div className="pointer-events-none absolute inset-0 bg-gradient-to-b from-white/[0.02] to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
+            <div className="relative z-10 w-12 h-12 rounded-xl bg-white/5 border border-zinc-700 flex items-center justify-center text-xl flex-shrink-0">
               📞
             </div>
-            <div>
+            <div className="relative z-10">
               <p className="text-zinc-500 text-xs uppercase tracking-widest mb-1">Phone</p>
               <p className="text-white font-medium text-base group-hover:text-zinc-300 transition-colors">+92 315 6892862</p>
             </div>
